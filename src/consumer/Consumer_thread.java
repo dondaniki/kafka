@@ -40,6 +40,10 @@ public class Consumer_thread implements Runnable {
 	public void run() {
 		try {
 			consumer.subscribe(topics);
+			
+			
+			
+			
 
 			while (true) {
 				ConsumerRecords<String, String> records = consumer.poll(Long.MAX_VALUE);

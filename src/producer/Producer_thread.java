@@ -6,7 +6,7 @@ import java.util.Date;
 
 import scala.util.Random;
 
-public class producer_thread implements Runnable {
+public class Producer_thread implements Runnable {
 
 	private String threadName;
 	private Thread t;
@@ -15,7 +15,7 @@ public class producer_thread implements Runnable {
 	
 	private Random rand;
 
-	public producer_thread(String topic) {
+	public Producer_thread(String topic) {
 		// TODO Auto-generated constructor stub
 		threadName = topic;
 		System.out.println("creating " + threadName);

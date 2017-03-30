@@ -1,6 +1,6 @@
 package producer;
 
-public class productor_main {
+public class Productor_main {
 
 	/**
 	 * @param args
@@ -15,7 +15,7 @@ public class productor_main {
 		
 		for (String topic : nombres_empresas) {
 			
-			producer_thread t = new producer_thread(topic.toUpperCase());
+			Producer_thread t = new Producer_thread(topic.toUpperCase());
 			t.start();
 			
 		} 
